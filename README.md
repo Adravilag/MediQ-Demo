@@ -90,20 +90,51 @@ query {
 ## 📸 Screenshots
 
 ### Dashboard Principal
-![Dashboard](./screenshots/dashboard.png)
-*Vista general con métricas de pacientes, tratamientos e ingresos*
+![Dashboard](./screenshots/dashboard.jpeg)
+*Vista general con métricas de pacientes, tratamientos e ingresos en tiempo real*
 
 ### Gestión de Pacientes
-![Pacientes](./screenshots/patients.png)
+![Pacientes - Lista](./screenshots/patients.jpeg)
 *Lista de pacientes con búsqueda y filtros avanzados*
 
-### Detalle de Tratamiento
-![Tratamiento](./screenshots/treatment-detail.png)
-*Seguimiento completo de evoluciones y sesiones*
+![Pacientes - Detalle](./screenshots/patients-details-info.jpeg)
+*Ficha completa del paciente con información personal y contacto*
 
-### GraphQL Playground
-![GraphQL](./screenshots/graphql-playground.png)
-*API GraphQL con schema interactivo*
+![Pacientes - Tratamientos](./screenshots/patients-details-treatment.jpeg)
+*Historial de tratamientos asociados al paciente*
+
+![Pacientes - Consentimientos](./screenshots/patients-details-consents.jpeg)
+*Consentimientos firmados del paciente*
+
+### Gestión de Tratamientos
+![Tratamientos - Lista](./screenshots/treatments.jpeg)
+*Panel de tratamientos activos y completados*
+
+![Tratamientos - Detalle](./screenshots/treatments-details-historial.jpeg)
+*Seguimiento detallado de evoluciones y sesiones*
+
+![Tratamientos - Facturación](./screenshots/treatments-details-billing.jpeg)
+*Control de facturación y pagos del tratamiento*
+
+### Consentimientos Digitales
+![Consentimientos - Lista](./screenshots/consents.jpeg)
+*Gestión de consentimientos informados*
+
+![Consentimientos - Detalle](./screenshots/consents-details.jpeg)
+*Vista detallada del documento de consentimiento*
+
+![Consentimientos - Firma](./screenshots/consent-details-signatured.jpeg)
+*Consentimiento con firma digital y validación*
+
+![Consentimientos - Auditoría](./screenshots/consents-details-audit.jpeg)
+*Registro de auditoría y trazabilidad del documento*
+
+### Sistema de Configuración
+![Configuración - Sistema](./screenshots/config-system.jpeg)
+*Configuración general de la clínica y especialidades*
+
+![Configuración - Templates](./screenshots/config-templates.jpeg)
+*Personalización de plantillas de documentos*
 
 ---
 
