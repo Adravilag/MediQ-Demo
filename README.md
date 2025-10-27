@@ -57,6 +57,7 @@
 - **Estado**: Signals (nueva API de reactividad de Angular)
 - **Formularios**: Reactive Forms con validación
 - **Deploy**: Vercel con auto-deploy desde GitHub
+- **Desktop**: Electron (versión desktop disponible Diciembre 2025)
 
 ### Features Técnicos
 - 🔒 **CORS configurado** para Vercel + subdominios
@@ -221,6 +222,7 @@ MIT License - Ver repositorios individuales para más detalles.
 - ✅ Menú deshabilitado cuando backend está offline (UX mejorada)
 - ✅ Datos de prueba pre-cargados mediante seeding
 - ✅ Documentación Swagger completamente funcional
+- 🚧 **Versión Desktop (Electron)**: Disponible Diciembre 2025
 
 **Limitaciones del Tier Gratuito**:
 - ⏱️ Backend puede tardar ~50 segundos en despertar tras inactividad
