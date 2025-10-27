@@ -34,9 +34,9 @@
 - 📊 **Dashboard Analítico**: Métricas en tiempo real (pacientes, ingresos, tratamientos activos)
 - 🔄 **API REST + GraphQL**: Doble interfaz de consulta de datos con documentación Swagger
 - 🎨 **Multi-especialidad**: Configurable para estética, fisioterapia, odontología, medicina general
-- � **Búsqueda Avanzada**: Filtros dinámicos por estado, fecha, tipo de tratamiento
+- 🔍 **Búsqueda Avanzada**: Filtros dinámicos por estado, fecha, tipo de tratamiento
 - ⚙️ **Sistema Configurable**: Campos de formulario y plantillas personalizables por clínica
-- 🌐 **Responsive Design**: Interfaz adaptada a desktop, tablet y móvil
+- 📱 **Responsive Design Completo**: Sistema responsive con **ResponsiveService**, directivas custom y tabla híbrida que alterna entre vista de tabla (desktop) y cards (móvil). 5 breakpoints configurados con **Angular CDK BreakpointObserver**
 - 🔔 **Backend Health Monitoring**: Indicador visual del estado del servidor en tiempo real
 
 ---
@@ -67,6 +67,9 @@
 - 📦 **Modular Architecture** con separación de responsabilidades
 - ✅ **DTO Validation** en todas las peticiones
 - 🌍 **Environment Management** (dev/prod)
+- 📱 **Sistema Responsive Completo** con ResponsiveService + Angular CDK
+- 🎯 **Directivas Custom Responsive**: `*appResponsive`, `[appResponsiveClass]`, `appResponsiveGrid`
+- 📊 **Tabla Híbrida**: Alterna automáticamente entre tabla (desktop) y cards (móvil)
 
 ---
 
@@ -183,10 +186,11 @@ query {
 - ✅ **Arquitectura Modular**: Separación de responsabilidades, Repository Pattern
 - ✅ **UI/UX Moderno**: TailwindCSS, componentes reutilizables, diseño responsive
 - ✅ **State Management**: Angular Signals para reactividad eficiente
+- ✅ **Responsive Design Avanzado**: ResponsiveService con Angular CDK, directivas custom, tabla híbrida
 - ✅ **DevOps**: Deploy automatizado en Vercel + Render, CORS, environment management
 - ✅ **Clean Code**: SOLID principles, código documentado, commits semánticos
 - ✅ **Error Handling**: Manejo de errores, validaciones, mensajes de usuario
-- ✅ **Performance**: Lazy loading, optimización de bundles, health monitoring
+- ✅ **Performance**: Lazy loading, optimización de bundles, health monitoring, debouncing
 
 ---
 
