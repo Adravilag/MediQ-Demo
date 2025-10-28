@@ -52,24 +52,28 @@
 - **Deploy**: Render (tier gratuito)
 
 ### Frontend
-- **Framework**: Angular 19 con Standalone Components
-- **UI**: TailwindCSS 3 + DaisyUI
-- **Estado**: Signals (nueva API de reactividad de Angular)
-- **Formularios**: Reactive Forms con validación
+- **Framework**: Angular 20 con Standalone Components
+- **UI**: TailwindCSS 4.1 + DaisyUI + Custom Components
+- **Estado**: Signals (API de reactividad de Angular)
+- **Formularios**: Reactive Forms con validación avanzada
 - **Deploy**: Vercel con auto-deploy desde GitHub
-- **Desktop**: Electron (versión desktop disponible Diciembre 2025)
+- **Desktop**: Electron 38.4 (aplicación de escritorio disponible)
 
 ### Features Técnicos
 - 🔒 **CORS configurado** para Vercel + subdominios
 - ⚡ **Lazy Loading** de módulos para mejor performance
-- 🎨 **Componentes SVG optimizados** con carga síncrona
-- 🔄 **Health Check** automático cada 30s
+- 🎨 **Sistema de Iconos SVG** - 70+ iconos Google Material Design optimizados
+- 🔄 **Health Check** automático cada 30s con indicador visual
 - 📦 **Modular Architecture** con separación de responsabilidades
 - ✅ **DTO Validation** en todas las peticiones
 - 🌍 **Environment Management** (dev/prod)
-- 📱 **Sistema Responsive Completo** con ResponsiveService + Angular CDK
+- 📱 **Sistema Responsive Completo** con ResponsiveService + Angular CDK BreakpointObserver
 - 🎯 **Directivas Custom Responsive**: `*appResponsive`, `[appResponsiveClass]`, `appResponsiveGrid`
 - 📊 **Tabla Híbrida**: Alterna automáticamente entre tabla (desktop) y cards (móvil)
+- 🎨 **Dashboard v2.4**: Alertas inteligentes, Quick Actions FAB, Timeline de actividad
+- 🔔 **KPIs Interactivos**: Métricas clicables con navegación a vistas detalladas
+- 📈 **Iconos de Tendencia**: Ascendente (verde), Descendente (rojo), Estable (azul)
+- ⚙️ **77 Tests Unitarios**: 100% cobertura CRUD en backend
 
 ---
 
@@ -81,12 +85,19 @@
 **Modo Demo**: Navegación libre sin autenticación. Datos de prueba pre-cargados mediante seeding.
 
 **Características destacadas para probar**:
-- ✅ Dashboard con métricas en tiempo real
+- ✅ **Dashboard v2.4** con alertas inteligentes y métricas interactivas
+- ✅ **Quick Actions FAB** (botón flotante) para crear rápidamente
+- ✅ **Timeline de Actividad Reciente** con últimas acciones
+- ✅ **Filtro de Periodo** (hoy, semana, mes, trimestre, año, personalizado)
+- ✅ **KPIs Clicables** - Click en métricas para navegar a vistas filtradas
+- ✅ **Objetivos Visibles** - Badges de meta en consentimientos (90%)
+- ✅ **Pendiente de Cobro Destacado** - Visualización prioritaria
 - ✅ Búsqueda y filtros avanzados de pacientes
 - ✅ Creación y edición de tratamientos
 - ✅ Sistema de consentimientos con auditoría
 - ✅ Configuración multi-especialidad
 - ✅ Indicador de estado del backend (arriba a la derecha)
+- ✅ **70+ Iconos Material Design** integrados
 
 ### 📡 API REST + Swagger
 **Base URL**: `https://mediq-backend-ba4f.onrender.com/api`
@@ -129,7 +140,7 @@ query {
 
 ### Dashboard Principal
 ![Dashboard](./screenshots/dashboard.jpeg)
-*Vista general con métricas de pacientes, tratamientos e ingresos en tiempo real*
+*Dashboard v2.4 con alertas inteligentes, Quick Actions FAB, timeline de actividad y métricas interactivas en tiempo real*
 
 ### Gestión de Pacientes
 ![Pacientes - Lista](./screenshots/patients.jpeg)
@@ -187,6 +198,8 @@ query {
 - ✅ **UI/UX Moderno**: TailwindCSS, componentes reutilizables, diseño responsive
 - ✅ **State Management**: Angular Signals para reactividad eficiente
 - ✅ **Responsive Design Avanzado**: ResponsiveService con Angular CDK, directivas custom, tabla híbrida
+- ✅ **Dashboard Moderno v2.4**: Alertas inteligentes, FAB, timeline, filtros de periodo
+- ✅ **Sistema de Iconos SVG**: 70+ iconos Google Material Design optimizados
 - ✅ **DevOps**: Deploy automatizado en Vercel + Render, CORS, environment management
 - ✅ **Clean Code**: SOLID principles, código documentado, commits semánticos
 - ✅ **Error Handling**: Manejo de errores, validaciones, mensajes de usuario
@@ -226,7 +239,10 @@ MIT License - Ver repositorios individuales para más detalles.
 - ✅ Menú deshabilitado cuando backend está offline (UX mejorada)
 - ✅ Datos de prueba pre-cargados mediante seeding
 - ✅ Documentación Swagger completamente funcional
-- 🚧 **Versión Desktop (Electron)**: Disponible Diciembre 2025
+- ✅ **77 Tests Unitarios** pasando al 100% (backend)
+- � **Versión Desktop (Electron)**: Aplicación de escritorio disponible
+- 📱 **Sistema Responsive Completo**: Tabla híbrida + directivas custom
+- 🎨 **Dashboard v2.4**: Alertas, FAB, timeline, KPIs interactivos
 
 **Limitaciones del Tier Gratuito**:
 - ⏱️ Backend puede tardar ~50 segundos en despertar tras inactividad
@@ -237,6 +253,6 @@ MIT License - Ver repositorios individuales para más detalles.
 
 ---
 
-**Última actualización**: Octubre 2025  
-**Versión**: 1.0.0
+**Última actualización**: 28 de Octubre 2025  
+**Versión**: 2.4.0 - Dashboard v2.4 + Sistema Responsive Completo
 
