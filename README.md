@@ -210,9 +210,12 @@ query {
 ##  Contacto y Enlaces
 
 **Desarrollador**: Adrián Dávila Guerra
- **Email**: adrian.davilaguerra@gmail.com  
- **LinkedIn**: [linkedin.com/in/adravilag]([https://linkedin.com/in/adravilag](https://www.linkedin.com/in/adri%C3%A1n-d%C3%A1vila-guerra-97a15496/))  
- **GitHub**: [github.com/Adravilag](https://github.com/Adravilag)
+
+**Email**: adrian.davilaguerra@gmail.com
+
+**LinkedIn**: [linkedin.com/in/adravilag](https://www.linkedin.com/in/adri%C3%A1n-d%C3%A1vila-guerra-97a15496/)
+
+**GitHub**: [github.com/Adravilag](https://github.com/Adravilag)
 
 ---
 
