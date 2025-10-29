@@ -253,6 +253,103 @@ MIT License - Ver repositorios individuales para más detalles.
 
 ---
 
-**Última actualización**: 28 de Octubre 2025  
-**Versión**: 2.4.0 - Dashboard v2.4 + Sistema Responsive Completo
+---
+
+## 💳 Sistema de Pagos Online
+
+MediQ integra **pagos online con Bizum y tarjeta** mediante Redsys TPV Virtual.
+
+### Características de Pagos en la Demo
+- ✅ **Facturación Automática**: Crea facturas desde sesiones con un click
+- ✅ **Múltiples Métodos**: Efectivo (inmediato), Bizum (online), Transferencia, Tarjeta
+- ✅ **Pago con Bizum**: Botón integrado en formularios de factura
+- ✅ **Confirmación Automática**: Webhook actualiza estado sin intervención manual
+- ✅ **Estados Inteligentes**: 
+  - 💵 Efectivo → `paid` (inmediato)
+  - 📱 Bizum → `processing` → `paid` (webhook)
+  - 🏦 Transferencia → `pending` → `paid` (manual)
+- ✅ **Polling en Tiempo Real**: UI se actualiza automáticamente al confirmar pago
+
+### Flujo de Pago en la Demo
+
+```
+1. Crear Sesión
+   └─→ Seleccionar "📱 Bizum (pago online)"
+   └─→ Marcar "✅ Crear factura automáticamente"
+   
+2. Guardar Sesión
+   └─→ Factura generada con status: 'processing'
+   └─→ Redirige a formulario de factura
+   
+3. Pagar con Bizum
+   └─→ Click en botón "💳 Pagar con Bizum"
+   └─→ Se abre ventana de Redsys
+   └─→ Usuario paga desde app bancaria
+   
+4. Confirmación Automática
+   └─→ Webhook actualiza factura: status='paid'
+   └─→ UI detecta cambio (polling cada 3s)
+   └─→ Muestra "✅ Pago confirmado exitosamente"
+```
+
+### Endpoints de API
+
+```http
+# Iniciar pago (genera firma y parámetros)
+POST https://mediq-backend-ba4f.onrender.com/api/payments/initiate
+Body: { invoiceId, amount, description }
+
+# Consultar estado de pago (para polling)
+GET https://mediq-backend-ba4f.onrender.com/api/payments/status/:invoiceId
+
+# Webhook de confirmación (llamado por Redsys)
+POST https://mediq-backend-ba4f.onrender.com/api/payments/webhook/redsys
+```
+
+### Probarlo en la Demo
+
+⚠️ **Nota**: El sistema de pagos está completamente implementado en el código, pero la demo pública usa credenciales de sandbox de Redsys. Para pruebas reales:
+
+1. Accede a [https://mediq-one.vercel.app](https://mediq-one.vercel.app)
+2. Crea un paciente con email válido
+3. Crea un tratamiento para ese paciente
+4. Crea una sesión y selecciona "Bizum"
+5. Marca "Crear factura automáticamente"
+6. Guarda y sigue el flujo de pago
+
+**Modo de prueba**: Usa tarjetas de prueba de Redsys o el simulador de Bizum para testing.
+
+**📚 Documentación Técnica**:
+- [Sistema de Pagos Completo](../MediQ-Backend/docs/PAYMENT-SYSTEM.md)
+- [Guía Rápida de Integración](../MediQ-Backend/PAYMENT-QUICKSTART.md)
+- [Implementación Frontend](../FACTURACION-BIZUM-IMPLEMENTADO.md)
+
+---
+
+## 🎨 Mejoras Visuales Recientes
+
+### Dashboard v2.4
+- **Alertas Inteligentes**: Sistema de notificaciones contextuales
+- **Quick Actions FAB**: Botón flotante con 4 acciones rápidas
+- **Timeline de Actividad**: Últimas 5 acciones del sistema
+- **Filtro de Periodo**: 6 opciones temporales
+- **KPIs Interactivos**: Click para navegar a vistas filtradas
+- **70+ Iconos Material Design**: sprites.svg optimizado
+
+### Sistema Responsive Completo
+- **ResponsiveService** con Angular CDK BreakpointObserver
+- **5 Breakpoints**: XSmall, Small, Medium, Large, XLarge
+- **Directivas Custom**: `*appResponsive`, `[appResponsiveClass]`, `appResponsiveGrid`
+- **Tabla Híbrida**: Alterna entre tabla (desktop) y cards (móvil)
+
+### Facturación Mejorada
+- **UI con Emojis**: Métodos de pago visuales y claros
+- **Lógica Condicional**: Checkbox inteligente según método
+- **Mensajes Contextuales**: Información en tiempo real
+- **Estados Visuales**: Badges de color según estado de pago
+
+---
+
+**Última actualización**: 30 de Octubre 2025  
+**Versión**: 2.5.0 - Dashboard v2.4 + Responsive + Pagos Bizum 💳
 
