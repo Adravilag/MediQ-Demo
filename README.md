@@ -62,7 +62,7 @@
 ### Features Técnicos
 -  **CORS configurado** para Vercel + subdominios
 -  **Lazy Loading** de módulos para mejor performance
--  **Sistema de Iconos SVG** - 70+ iconos Google Material Design optimizados
+-  **Sistema de Iconos SVG** - 140+ iconos Material Design optimizados con sprites.svg
 -  **Health Check** automático cada 30s con indicador visual
 -  **Modular Architecture** con separación de responsabilidades
 -  **DTO Validation** en todas las peticiones
@@ -73,6 +73,9 @@
 -  **Dashboard v2.4**: Alertas inteligentes, Quick Actions FAB, Timeline de actividad
 -  **KPIs Interactivos**: Métricas clicables con navegación a vistas detalladas
 -  **Iconos de Tendencia**: Ascendente (verde), Descendente (rojo), Estable (azul)
+-  **Sistema de Iconos SVG**: 140+ iconos Material Design con SvgIconComponent
+-  **Badges con Iconos**: Tratamientos, consentimientos, estados con iconos visuales
+-  **Acciones Consistentes**: Iconos uniformes en todos los botones CRUD
 -  **77 Tests Unitarios**: 100% cobertura CRUD en backend
 
 ---
@@ -92,6 +95,9 @@
 -  **KPIs Clicables** - Click en métricas para navegar a vistas filtradas
 -  **Objetivos Visibles** - Badges de meta en consentimientos (90%)
 -  **Pendiente de Cobro Destacado** - Visualización prioritaria
+-  **Sistema de Iconos Completo** - 140+ iconos SVG Material Design en badges, acciones y filtros
+-  **Badges Visuales** - Iconos en tratamientos, consentimientos, estados de sesión
+-  **Botones de Acción** - Iconos consistentes en todas las acciones CRUD
 -  Búsqueda y filtros avanzados de pacientes
 -  Creación y edición de tratamientos
 -  Sistema de consentimientos con auditoría
@@ -331,7 +337,15 @@ POST https://mediq-backend-ba4f.onrender.com/api/payments/webhook/redsys
 - **Timeline de Actividad**: Últimas 5 acciones del sistema
 - **Filtro de Periodo**: 6 opciones temporales
 - **KPIs Interactivos**: Click para navegar a vistas filtradas
-- **70+ Iconos Material Design**: sprites.svg optimizado
+- **140+ Iconos Material Design**: sprites.svg optimizado con sistema completo
+
+### Sistema de Iconos SVG
+- **SvgIconComponent**: Componente reutilizable standalone
+- **140+ iconos Material Design**: Diseño consistente y profesional
+- **Badges Visuales**: Iconos en tratamientos, consentimientos, estados
+- **Botones de Acción**: Iconos en CRUD (view, edit, archive, delete, restore)
+- **Filtros Mejorados**: Iconos SVG en lugar de emojis
+- **Demo Interactivo**: `/svg-demo` con catálogo completo
 
 ### Sistema Responsive Completo
 - **ResponsiveService** con Angular CDK BreakpointObserver
@@ -347,6 +361,40 @@ POST https://mediq-backend-ba4f.onrender.com/api/payments/webhook/redsys
 
 ---
 
-**Última actualización**: 30 de Octubre 2025  
-**Versión**: 2.5.0 - Dashboard v2.4 + Responsive + Pagos Bizum 
+## 📝 Changelog Reciente
+
+### v2.6.0 (30 Octubre 2025)
+
+**🎨 Sistema de Iconos SVG Mejorado**
+- Expansión de 70+ a **140+ iconos Material Design**
+- Sistema completo con `SvgIconComponent` reutilizable
+- Iconos en badges, botones de acción y filtros
+- Demo interactivo en `/svg-demo`
+
+**🗂️ Gestión de Archivados**
+- Nuevos componentes para pacientes, tratamientos, sesiones y consentimientos archivados
+- Restauración masiva y eliminación permanente
+- Trazabilidad completa de documentos archivados
+
+**✨ Mejoras de Experiencia**
+- Pre-validación de pacientes duplicados
+- Datos de prueba para formularios de tratamientos
+- Carga dinámica de tipos de tratamiento
+- Workflow mejorado tras firmar consentimientos
+
+**🔧 Mejoras Técnicas**
+- Refactorización de componentes del dashboard
+- Actualización de modelos con compatibilidad retroactiva
+- Limpieza de código y formateo consistente
+- Notificaciones uniformes en toda la aplicación
+
+### v2.5.0 (Octubre 2025)
+- Dashboard v2.4 con alertas inteligentes
+- Sistema responsive completo
+- Integración de pagos Bizum/Redsys
+
+---
+
+**Última actualización**: 30 Octubre 2025  
+**Versión**: 2.6.0 - Dashboard v2.4 + Sistema de Iconos SVG (140+) + Responsive + Pagos Bizum 🎨💳 
 
