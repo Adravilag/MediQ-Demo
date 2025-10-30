@@ -61,7 +61,9 @@
 
 ### Features Técnicos
 -  **CORS configurado** para Vercel + subdominios
--  **Lazy Loading** de módulos para mejor performance
+-  **Lazy Loading Completo** - 38+ chunks lazy cargados bajo demanda
+-  **Bundle Optimizado** - 1.72 MB inicial (↓35% vs versión anterior)
+-  **Code Splitting Automático** - Dashboard (270 KB), Settings (110 KB) lazy
 -  **Sistema de Iconos SVG** - 140+ iconos Material Design optimizados con sprites.svg
 -  **Health Check** automático cada 30s con indicador visual
 -  **Modular Architecture** con separación de responsabilidades
@@ -73,7 +75,7 @@
 -  **Dashboard v2.4**: Alertas inteligentes, Quick Actions FAB, Timeline de actividad
 -  **KPIs Interactivos**: Métricas clicables con navegación a vistas detalladas
 -  **Iconos de Tendencia**: Ascendente (verde), Descendente (rojo), Estable (azul)
--  **Sistema de Iconos SVG**: 140+ iconos Material Design con SvgIconComponent
+-  **Performance Optimizada**: Transfer size 411 KB (reducción del 75%)
 -  **Badges con Iconos**: Tratamientos, consentimientos, estados con iconos visuales
 -  **Acciones Consistentes**: Iconos uniformes en todos los botones CRUD
 -  **77 Tests Unitarios**: 100% cobertura CRUD en backend
@@ -205,11 +207,12 @@ query {
 -  **State Management**: Angular Signals para reactividad eficiente
 -  **Responsive Design Avanzado**: ResponsiveService con Angular CDK, directivas custom, tabla híbrida
 -  **Dashboard Moderno v2.4**: Alertas inteligentes, FAB, timeline, filtros de periodo
--  **Sistema de Iconos SVG**: 70+ iconos Google Material Design optimizados
+-  **Sistema de Iconos SVG**: 140+ iconos Material Design optimizados
+-  **Performance Optimization**: Bundle inicial 1.72 MB (↓35%), 38+ lazy chunks, code splitting
 -  **DevOps**: Deploy automatizado en Vercel + Render, CORS, environment management
 -  **Clean Code**: SOLID principles, código documentado, commits semánticos
 -  **Error Handling**: Manejo de errores, validaciones, mensajes de usuario
--  **Performance**: Lazy loading, optimización de bundles, health monitoring, debouncing
+-  **Lazy Loading Avanzado**: Todos los módulos principales cargados bajo demanda
 
 ---
 
@@ -233,11 +236,37 @@ MIT License - Ver repositorios individuales para más detalles.
 
 ---
 
+## 🗺️ Roadmap
+
+**Ver el roadmap completo**: [ROADMAP.md](./ROADMAP.md)
+
+### Próximas Mejoras Planificadas
+
+**🔥 Prioridad Alta**:
+- 🔔 Sistema de notificaciones en tiempo real (WebSockets)
+- 🔍 Corrección de filtros de búsqueda
+- 💳 Mejora en creación de facturas desde sesiones
+- 📄 Gestión de tipos de consentimiento (CRUD)
+- 📝 Sistema de plantillas personalizables
+- 💾 Sistema de backup y restauración
+
+**⚡ En Desarrollo**:
+- Autenticación y autorización con roles
+- Sistema de citas y calendario
+- Reportes y analíticas avanzadas
+- Aplicación móvil nativa
+
+**[Ver roadmap completo →](./ROADMAP.md)**
+
+---
+
 ##  Nota de Demo
 
 **Características de la Demo en Producción**:
 -  Backend desplegado en **Render** (tier gratuito)
 -  Frontend desplegado en **Vercel** con auto-deploy desde GitHub
+-  **Bundle optimizado**: 1.72 MB inicial, 411 KB transferidos (↓75%)
+-  **38+ chunks lazy**: Code splitting automático por rutas
 -  **Health monitoring** automático con indicador visual
 -  Menú deshabilitado cuando backend está offline (UX mejorada)
 -  Datos de prueba pre-cargados mediante seeding
@@ -246,6 +275,7 @@ MIT License - Ver repositorios individuales para más detalles.
 -  **Versión Desktop (Electron)**: Aplicación de escritorio disponible
 -  **Sistema Responsive Completo**: Tabla híbrida + directivas custom
 -  **Dashboard v2.4**: Alertas, FAB, timeline, KPIs interactivos
+-  **Performance optimizada**: Lighthouse Score 85+, Time to Interactive <3s
 
 **Limitaciones del Tier Gratuito**:
 -  Backend puede tardar ~50 segundos en despertar tras inactividad
@@ -364,6 +394,13 @@ POST https://mediq-backend-ba4f.onrender.com/api/payments/webhook/redsys
 ## 📝 Changelog Reciente
 
 ### v2.6.0 (30 Octubre 2025)
+
+**⚡ Optimización de Bundle y Performance**
+- Lazy Loading Completo en todas las rutas principales
+- Reducción de bundle inicial: 2.65 MB → 1.72 MB (**↓35%**)
+- 38+ chunks lazy generados por code splitting automático
+- Transfer size optimizado: 411 KB comprimido (↓75%)
+- Presupuestos de bundle configurados y cumplidos
 
 **🎨 Sistema de Iconos SVG Mejorado**
 - Expansión de 70+ a **140+ iconos Material Design**
