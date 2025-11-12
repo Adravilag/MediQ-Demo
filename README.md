@@ -238,25 +238,22 @@ MIT License - Ver repositorios individuales para más detalles.
 
 ## 🗺️ Roadmap
 
-**Ver el roadmap completo**: [ROADMAP.md](./ROADMAP.md)
+Para conocer las próximas mejoras planificadas, consulta nuestro [ROADMAP completo](./ROADMAP.md).
 
 ### Próximas Mejoras Planificadas
 
-**🔥 Prioridad Alta**:
-- 🔔 Sistema de notificaciones en tiempo real (WebSockets)
-- 🔍 Corrección de filtros de búsqueda
-- 💳 Mejora en creación de facturas desde sesiones
-- 📄 Gestión de tipos de consentimiento (CRUD)
-- 📝 Sistema de plantillas personalizables
-- 💾 Sistema de backup y restauración
+#### 🔥 Prioridad Alta
+- **Tour Interactivo con Driver.js** - Onboarding guiado para nuevos usuarios ([Ver implementación](./DRIVER-JS-IMPLEMENTATION.md))
+- **Sistema de Notificaciones en Tiempo Real** - WebSockets para sincronización multi-usuario
+- **Creación de Facturas desde Sesiones** - Flujo optimizado con preview
+- **Gestión de Tipos de Consentimiento** - CRUD completo con plantillas HTML
 
-**⚡ En Desarrollo**:
-- Autenticación y autorización con roles
-- Sistema de citas y calendario
-- Reportes y analíticas avanzadas
-- Aplicación móvil nativa
-
-**[Ver roadmap completo →](./ROADMAP.md)**
+#### ⚡ Completado Recientemente
+- ✅ **Refactorización Treatment-Form** - 6 componentes modulares, -70.8% HTML, 0 errores compilación (13 Nov 2025)
+- ✅ **TypeScript Strict Mode Backend** - Type safety completo con FindOptionsWhere, type guards y null handling (13 Nov 2025)
+- ✅ **Handlers Genéricos de Entidades** - Sistema reutilizable DRY para CRUD/Navegación/Filtros (Nov 2025)
+- ✅ **Pipes Compartidos** - 10 pipes reutilizables con documentación completa (Nov 2025)
+- ✅ **Treatment-List Handlers v2.0** - Arquitectura modular consistente con otros listados (Nov 2025)
 
 ---
 
@@ -393,7 +390,59 @@ POST https://mediq-backend-ba4f.onrender.com/api/payments/webhook/redsys
 
 ## 📝 Changelog Reciente
 
-### v2.6.0 (30 Octubre 2025)
+### Última Actualización (13 Noviembre 2025)
+
+**🏗️ Frontend - Arquitectura y Refactorización**
+- **Treatment-Form Refactorizado**: Arquitectura modular con 6 section components
+  - ✅ Reducción de HTML: 332 → 97 líneas (-70.8%)
+  - ✅ Similitud arquitectónica: 75% → 95% (+20 puntos)
+  - ✅ Componentes creados: header, alerts, basic-info, medical-history, factors, consent-checkbox
+  - ✅ Type safety completo con wrappers para null-safety
+  - ✅ Build exitoso: 0 errores de compilación
+  - 📄 [Documentación completa](../docs/TREATMENT-FORM-REFACTORING-COMPLETE.md)
+
+- **Treatment-List Handlers v2.0**: Migración a arquitectura modular consistente
+  - ✅ 10 archivos de handlers (data, column-config, action-config, filter-config, etc.)
+  - ✅ Computed signals para filtrado, ordenamiento y paginación
+  - ✅ Context menu handlers con validaciones de estado
+  - ✅ Inicialización con query params desde URL
+  - ✅ README completo con 330+ líneas de documentación
+
+**📦 Handlers Genéricos Reutilizables**
+- **EntityCRUDHandlers**: CRUD operations para cualquier entidad
+- **EntityNavigationHandlers**: Navegación consistente (view/edit/new/archived)
+- **EntityPaginationHandlers**: Paginación con cálculo de totalPages
+- **EntityFilterHandlers**: Filtros dinámicos con reset y load saved
+- **EntityExportHandlers**: Exportación JSON/CSV con mappers personalizados
+- **EntityActionHandlers**: Orquestador de acciones (view/edit/archive/delete)
+- **EntityComputedHandlers**: Utilidades para filtrado, sort y paginación
+- 📄 [Documentación de handlers genéricos](../MediQ-Frontend/src/app/shared/handlers/README.md)
+
+**🎨 Pipes Compartidos**
+- ✅ 10 pipes reutilizables documentados:
+  - `CurrencyEsPipe`: Formato de moneda española (1.234,56 €)
+  - `StatusBadgePipe`: Configuración de badges para todos los estados
+  - `SafeHtmlPipe`: Sanitización de HTML segura
+  - `HighlightPipe`: Resaltado de términos de búsqueda
+  - `FileSizePipe`: Conversión de bytes a formato legible
+  - `InitialsPipe`: Extracción de iniciales para avatares
+  - `DurationPipe`: Formato de duración (1h 30min)
+  - `PluralPipe`: Pluralización automática en español
+  - `TimeAgoPipe`: Tiempo relativo (Hace 2 horas)
+  - `TruncatePipe`: Truncado de texto con ellipsis
+- 📄 [Guía completa de pipes](../MediQ-Frontend/src/app/shared/pipes/README.md)
+
+**🔧 Backend - Mejoras de Code Quality**
+- ✅ TypeScript strict mode compliance
+  - Uso de `FindOptionsWhere<T>` en lugar de `any`
+  - Type guards con `error instanceof Error`
+  - Proper null handling con optional chaining
+  - Type-safe enum comparisons
+- ✅ ESLint fixes: 0 warnings en patient.service.ts y consent.service.ts
+- ✅ Interfaces para respuestas enriquecidas (EnrichedConsent con patient data)
+- ✅ Métodos privados con type-safe implementations
+
+### 30 Octubre 2025
 
 **⚡ Optimización de Bundle y Performance**
 - Lazy Loading Completo en todas las rutas principales
@@ -432,6 +481,6 @@ POST https://mediq-backend-ba4f.onrender.com/api/payments/webhook/redsys
 
 ---
 
-**Última actualización**: 30 Octubre 2025  
-**Versión**: 2.6.0 - Dashboard v2.4 + Sistema de Iconos SVG (140+) + Responsive + Pagos Bizum 🎨💳 
+**Última actualización**: 13 Noviembre 2025  
+**Mejoras principales**: Treatment-Form Refactorizado + TypeScript Strict Mode Backend + 140+ Iconos SVG �️✨ 
 
