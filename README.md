@@ -1,10 +1,8 @@
 #  MediQ - Sistema de Gestión Médica Integral
 
-> **Demo en vivo:** [https://mediq-one.vercel.app](https://mediq-one.vercel.app)
-> 
-> **API Backend:** [https://mediq-backend-ba4f.onrender.com/api](https://mediq-backend-ba4f.onrender.com/api)
-> 
-> **Documentación Swagger:** [https://mediq-backend-ba4f.onrender.com/api/docs](https://mediq-backend-ba4f.onrender.com/api/docs)
+> **Demo en vivo:** [https://mediq-frontend-kj92.onrender.com](https://mediq-frontend-kj92.onrender.com)
+>  
+> **Documentación Swagger:** [https://mediq-backend-f6ud.onrender.com/api/docs](https://mediq-backend-f6ud.onrender.com/api/docs)
 
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.7-blue?logo=typescript)](https://www.typescriptlang.org/)
 [![NestJS](https://img.shields.io/badge/NestJS-11.0-E0234E?logo=nestjs)](https://nestjs.com/)
