@@ -18,7 +18,7 @@
 
 ###  Demo Rápida
 
-**¡Pruébalo ahora!** → [https://mediq-one.vercel.app](https://mediq-one.vercel.app)
+**¡Pruébalo ahora!** → [https://mediq-frontend-kj92.onrender.com](https://mediq-frontend-kj92.onrender.com)
 
  **Nota**: El backend está en tier gratuito de Render. La primera carga puede tardar ~50 segundos mientras el servidor despierta. El frontend incluye un **indicador de estado** que te avisa cuando el backend está listo.
 
