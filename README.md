@@ -1,8 +1,8 @@
 #  MediQ - Sistema de Gestión Médica Integral
 
-> **Demo en vivo:** [https://mediq-frontend-kj92.onrender.com](https://mediq-frontend-kj92.onrender.com)
+> **Demo en vivo:** [https://medi-q-frontend-seven.vercel.app/](https://medi-q-frontend-seven.vercel.app/)
 >  
-> **Documentación Swagger:** [https://mediq-backend-f6ud.onrender.com/api/docs](https://mediq-backend-f6ud.onrender.com/api/docs)
+> **Documentación Swagger:** [https://mediq-leb7.onrender.com/](https://mediq-leb7.onrender.com/)
 
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.7-blue?logo=typescript)](https://www.typescriptlang.org/)
 [![NestJS](https://img.shields.io/badge/NestJS-11.0-E0234E?logo=nestjs)](https://nestjs.com/)
@@ -18,7 +18,7 @@
 
 ###  Demo Rápida
 
-**¡Pruébalo ahora!** → [https://mediq-frontend-kj92.onrender.com](https://mediq-frontend-kj92.onrender.com)
+**¡Pruébalo ahora!** → [https://medi-q-frontend-seven.vercel.app/](https://medi-q-frontend-seven.vercel.app/)
 
  **Nota**: El backend está en tier gratuito de Render. La primera carga puede tardar ~50 segundos mientras el servidor despierta. El frontend incluye un **indicador de estado** que te avisa cuando el backend está listo.
 
